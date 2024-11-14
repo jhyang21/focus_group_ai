@@ -17,3 +17,30 @@ Set the focus group objective and participant restrictions:
 ```python
 objective = "I want to know what people think about Emory University students."
 restriction = "I want to only recruit people who exaggerate."
+
+### Step 2: Generate Archetypes
+Generate 8 archetypes of focus group participants:
+```python
+message, archetypes = generateListOfArchetypes(objective, restriction)
+
+### Step 3: Create Personas
+Generate realistic personas based on the archetypes:
+```python
+personas = generatePersonas(message, archetypes)
+
+### Step 4: Design Questions
+Create focus group questions tailored to your objective:
+```python
+questions = generateQuestions(objective)
+
+### Step 5: Simulate Answers
+Generate participant responses to the focus group questions based on their personas:
+```python
+for key in personas:
+    generateAnswers(personas[key], questions)
+
+### Step 6: Generate Reports
+Compile a comprehensive focus group report based on the personas and their simulated responses:
+```python
+generateReport(objective, personas)
+generateReportDocument()
