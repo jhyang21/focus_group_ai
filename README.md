@@ -17,4 +17,3 @@ Set the focus group objective and participant restrictions:
 ```python
 objective = "I want to know what people think about Emory University students."
 restriction = "I want to only recruit people who exaggerate."
-'''
